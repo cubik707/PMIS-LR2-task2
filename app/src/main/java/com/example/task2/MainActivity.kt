@@ -117,7 +117,18 @@ fun Greeting(modifier: Modifier = Modifier) {
 
 @Composable
 fun Lists(modifier: Modifier = Modifier){
-    Text("Hi!!!!!", fontSize = 30.sp)
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFDBD6F3)),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = "Hi!!!!!",
+            fontSize = 30.sp
+        )
+    }
 }
 
 @Composable
